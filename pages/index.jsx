@@ -1,17 +1,18 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Gif from "../src/assets/prog.gif";
 import Image from "next/image";
 import Link from "next/link";
-import { ViewIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import { ViewIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
     <Box
       bg={"#003140"}
-      margin={{ base: "initial", sm: " initial", md: "auto" }}
+      margin={{ base: "initial", sm: " initial", md: "auto", lg: "auto" }}
       h={"100vh"}
       minH={"1000px"}
       minW={"324px"}
+      scrollBehavior="smooth"
     >
       <Flex
         h={"100%"}
@@ -39,6 +40,7 @@ const Home = () => {
             textAlign="center"
             color={"gray.200"}
             w={"80%"}
+            mt={"30px"}
           >
             Olá, Sou Diego Sales, Dev Front End jr.
           </Heading>

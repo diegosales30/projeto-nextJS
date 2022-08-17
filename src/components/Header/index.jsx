@@ -15,6 +15,7 @@ export default function HeaderComponent() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
+    //w={"100%"} position={"fixed"}
     <Box bg={"#171923"} color={"gray.300"}>
       <Flex
         maxW={"1360px"}
@@ -23,7 +24,6 @@ export default function HeaderComponent() {
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
         align={"center"}
         margin={"auto"}
       >

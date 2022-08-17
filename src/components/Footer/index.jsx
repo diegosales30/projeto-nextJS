@@ -6,33 +6,54 @@ import {
   Link,
   Stack,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
-import { SunIcon, LockIcon } from "@chakra-ui/icons";
-import { MdSettings } from "react-icons/md";
+import { LockIcon } from "@chakra-ui/icons";
+import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Footer() {
   return (
     <Box bg={"#171923"} color={"gray.300"}>
       <Container
         as={Stack}
-        maxW={"1280px"}
+        maxW={"1360px"}
         py={4}
         direction={{ base: "column", md: "row" }}
         spacing={2}
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text textAlign={"center"}>
-          © 2022 Diego Front-end jr. All rights reserved
+        <Text
+          textAlign={"center"}
+          display={"flex"}
+          justifyContent={"center"}
+          gap={2}
+        >
+          <LockIcon /> 2022 Diego Front-end jr. All rights reserved
         </Text>
 
         <Stack direction={"row"} spacing={6}>
-          <Link label={"WhatsApp"} href={"#"} target={"_black"}>
-            <LockIcon />
+          <Link
+            label={"Gmail"}
+            href={"mailto:diegofelipesales23@gmail.com"}
+            target={"_black"}
+          >
+            <SiGmail size={"1.5rem"} />
           </Link>
-          <Link label={"Facebook"} href={"#"} target={"_black"}></Link>
+          <Link
+            label={"Linkedin"}
+            href={"https://www.linkedin.com/in/diego-felipe-js/"}
+            target={"_black"}
+          >
+            <SiLinkedin size={"1.5rem"} />
+          </Link>
+          <Link
+            label={"Github"}
+            href={"https://github.com/diegosales30"}
+            target={"_black"}
+          >
+            <SiGithub size={"1.5rem"} />
+          </Link>
         </Stack>
       </Container>
     </Box>
