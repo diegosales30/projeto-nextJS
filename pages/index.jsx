@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import Gif from "../src/assets/prog.gif";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import { ViewIcon, ArrowRightIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       bg={"#003140"}
       margin={{ base: "initial", sm: " initial", md: "auto" }}
       h={"100vh"}
-      minH={"900px"}
+      minH={"1000px"}
       minW={"324px"}
     >
       <Flex
@@ -42,20 +42,33 @@ const Home = () => {
           >
             Olá, Sou Diego Sales, Dev Front End jr.
           </Heading>
-          <Text color={"gray.200"} minW={"324px"} w={"70%"}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem minima cupiditate accusamus at laudantium beatae
-            reiciendis deleniti error sunt aliquam sapiente iusto, aliquid nulla
-            dolorem esse provident velit consequatur hic? Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Exercitationem minima cupiditate
-            accusamus at laudantium beatae reiciendis deleniti error sunt
-            aliquam sapiente iusto, aliquid nulla dolorem esse provident velit
-            consequatur hic?
+          <Text color={"gray.200"} minW={"324px"} w={"70%"} fontWeight={"bold"}>
+            Seja bem-vindo. Me chamo Diego Sales e sou um desenvolvedor
+            Front-end. Sou natural de Manaus-AM. Sou Amante da natureza e
+            entusiasta da preservação do meio ambiente. Sou apaixonado por
+            tecnologia e por programação e estou sempre em busca de novas
+            oportunidades para aprimorar meus conhecimentos. Gosto muito de
+            aprender novas tecnologias, mas também gosto de fazer um som de
+            violão com os amigos. Sou desenvolvedor Front-end React e estou
+            estudando Nodejs para me tornar um desenvolvedor Full-stack.
           </Text>
           <Link href={"/projetos"}>
-            <Button style={{}}>
-              Projetos <ArrowRightIcon />
-            </Button>
+            <Box
+              border={"1px solid white"}
+              borderRadius={"5px"}
+              padding={"10px"}
+              bg={"#ffffff"}
+              fontWeight={"bold"}
+              cursor={"pointer"}
+              _hover={{
+                bg: "#003140",
+                marginLeft: "9px",
+                color: "white",
+              }}
+              transition={"all 0.3s ease-in-out"}
+            >
+              Projetos <ViewIcon fontSize={"1.3rem"} />
+            </Box>
           </Link>
         </Box>
         <Box

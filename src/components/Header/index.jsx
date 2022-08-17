@@ -61,11 +61,14 @@ export default function HeaderComponent() {
               ml={10}
               alignItems={"center"}
               listStyleType={"none"}
+              gap={5}
             >
               <Link href="/">
                 <ListItem
                   cursor={"pointer"}
-                  _hover={{ color: "#e3386a" }}
+                  _hover={{
+                    textDecoration: "underline",
+                  }}
                   marginLeft={"10px"}
                 >
                   Home
@@ -75,7 +78,7 @@ export default function HeaderComponent() {
               <Link href="/tecnologias">
                 <ListItem
                   cursor={"pointer"}
-                  _hover={{ color: "#e3386a" }}
+                  _hover={{ textDecoration: "underline" }}
                   marginLeft={"10px"}
                 >
                   Tecnologias
@@ -85,7 +88,7 @@ export default function HeaderComponent() {
               <Link href="/projetos">
                 <ListItem
                   cursor={"pointer"}
-                  _hover={{ color: "#e3386a" }}
+                  _hover={{ textDecoration: "underline" }}
                   marginLeft={"10px"}
                 >
                   Projetos
@@ -94,7 +97,7 @@ export default function HeaderComponent() {
               <Link href="/contatos">
                 <ListItem
                   cursor={"pointer"}
-                  _hover={{ color: "#e3386a" }}
+                  _hover={{ textDecoration: "underline" }}
                   marginLeft={"10px"}
                 >
                   Contatos
@@ -120,7 +123,7 @@ export default function HeaderComponent() {
             <Link href="/">
               <ListItem
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                _hover={{ textDecoration: "underline" }}
                 mt={"0px"}
               >
                 Home
@@ -130,7 +133,7 @@ export default function HeaderComponent() {
             <Link href="/tecnologias">
               <ListItem
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                _hover={{ textDecoration: "underline" }}
                 mt={"10px"}
               >
                 Tecnologias
@@ -140,7 +143,7 @@ export default function HeaderComponent() {
             <Link href="/projetos">
               <ListItem
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                _hover={{ textDecoration: "underline" }}
                 mt={"10px"}
               >
                 Projetos
@@ -149,7 +152,7 @@ export default function HeaderComponent() {
             <Link href="/contatos">
               <ListItem
                 cursor={"pointer"}
-                _hover={{ color: "#e3386a" }}
+                _hover={{ textDecoration: "underline" }}
                 mt={"10px"}
               >
                 Contatos
