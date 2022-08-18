@@ -167,13 +167,20 @@ export default function Projetos() {
             API GitHub
           </Heading>
 
-          <Box overflowY={"scroll"} maxW={"1360px"}>
+          <Box maxW={"1360px"}>
             <UnorderedList
               maxW={"700px"}
               h={"400px"}
               color={"white"}
               boxShadow={`0px 0px 10px #080707bc`}
-              overflow={"scroll"}
+              overflowY={"scroll"}
+              css={{
+                "::-webkit-scrollbar": {
+                  background: "#080707bc",
+                  width: "5px",
+                },
+              }}
+              WebkitOverflowScrolling={"touch"}
               margin={"auto"}
               mb={"10px"}
             >

@@ -52,7 +52,13 @@ const NewTechs = () => {
         maxW={"1360px"}
         h={"500px"}
         flexWrap={{ base: "wrap", md: "wrap", lg: "wrap" }}
-        overflow={"scroll"}
+        overflowY={"scroll"}
+        css={{
+          "::-webkit-scrollbar": {
+            background: "#080707bc",
+            width: "5px",
+          },
+        }}
       >
         {techs.map((tech, index) => (
           <ListItem listStyleType={"none"} key={index}>
