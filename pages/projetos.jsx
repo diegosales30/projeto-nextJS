@@ -175,9 +175,14 @@ export default function Projetos() {
               boxShadow={`0px 0px 10px #080707bc`}
               overflowY={"scroll"}
               css={{
-                "::-webkit-scrollbar": {
-                  background: "#080707bc",
-                  width: "5px",
+                "&::-webkit-scrollbar": {
+                  width: "12px",
+                  borderRadius: "10px",
+                  backgroundColor: "#ffffff9d",
+                },
+                "&::-webkit-scrollbar-thumb": {
+                  borderRadius: "10px",
+                  backgroundColor: "#021c24",
                 },
               }}
               WebkitOverflowScrolling={"touch"}
