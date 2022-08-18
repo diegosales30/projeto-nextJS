@@ -112,8 +112,12 @@ export default function Projetos() {
               <Box
                 _hover={{
                   cursor: "pointer",
-                  transform: "scale(1.1)",
+                  transform: "scale(1.01)",
                 }}
+                borderRadius={"10px"}
+                padding={0}
+                bg={"#00000096"}
+                boxShadow={"0px 0px 10px rgba(95, 94, 94, 0.596)"}
               >
                 <Image src={item.img} alt={item.title} />
               </Box>
