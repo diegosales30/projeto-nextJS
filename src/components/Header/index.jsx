@@ -18,6 +18,7 @@ export default function HeaderComponent() {
     //w={"100%"} position={"fixed"}
     <Box bg={"#171923"} color={"gray.300"}>
       <Flex
+        h={"5rem"}
         maxW={"1360px"}
         bg={"#171923"}
         color={"gray.300"}

@@ -76,12 +76,13 @@ export default function Projetos() {
       bg={"#003140"}
       margin={{ base: "initial", sm: " initial", md: "auto", lg: "auto" }}
       //h={"100vh"}
-      minH={"1000px"}
+      h={"calc(100vh - 10rem)"}
+      //minH={"1000px"}
       minW={"324px"}
     >
       <Flex
-        h={"100%"}
-        maxW={"1360px"}
+        //h={"100%"}
+        maxW={"1120px"}
         margin={{ base: "initial", md: "auto" }}
         align={"center"}
         justify={"space-around"}
@@ -97,7 +98,9 @@ export default function Projetos() {
           display={"flex"}
           justifyContent={"space-around"}
           alignItems={"center"}
-          flexWrap={{ base: "wrap", sm: "wrap", md: "wrap" }}
+          flexWrap={{ base: "wrap", sm: "wrap", md: "nowrap" }}
+          h={"15rem"}
+          overflowY={"scroll"}
         >
           {Data.map((item, index) => (
             <Box
@@ -105,9 +108,10 @@ export default function Projetos() {
               flexDirection={"column"}
               alignItems={"center"}
               key={index}
-              w={"300px"}
+              w={"15rem"}
               textAlign={"center"}
               padding={"10px"}
+              ml={5}
             >
               <Box
                 _hover={{
@@ -115,8 +119,8 @@ export default function Projetos() {
                   transform: "scale(1.01)",
                 }}
                 borderRadius={"10px"}
-                padding={0}
                 bg={"#00000096"}
+                w={"12rem"}
                 boxShadow={"0px 0px 10px rgba(95, 94, 94, 0.596)"}
               >
                 <Image src={item.img} alt={item.title} />
@@ -170,7 +174,7 @@ export default function Projetos() {
           <Box maxW={"1360px"}>
             <UnorderedList
               maxW={"700px"}
-              h={"400px"}
+              h={"200px"}
               color={"white"}
               boxShadow={`0px 0px 10px #080707bc`}
               overflowY={"scroll"}

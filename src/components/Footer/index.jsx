@@ -13,7 +13,7 @@ import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <Box bg={"#171923"} color={"gray.300"}>
+    <Box bg={"#171923"} color={"gray.300"} height={"5rem"} display={"center"}>
       <Container
         as={Stack}
         maxW={"1360px"}
@@ -21,7 +21,7 @@ export default function Footer() {
         direction={{ base: "column", md: "row" }}
         spacing={2}
         justify={{ base: "center", md: "space-between" }}
-        align={{ base: "center", md: "center" }}
+        alignItems={{ base: "center", md: "center", lg: "center" }}
       >
         <Text
           textAlign={"center"}

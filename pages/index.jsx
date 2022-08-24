@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, calc, Flex, Heading, Text } from "@chakra-ui/react";
 import Gif from "../src/assets/prog.gif";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,13 +9,11 @@ const Home = () => {
     <Box
       bg={"#003140"}
       margin={{ base: "initial", sm: " initial", md: "auto", lg: "auto" }}
-      h={"100vh"}
-      minH={"1000px"}
+      h={"calc(100vh - 10rem)"}
       minW={"324px"}
       scrollBehavior="smooth"
     >
       <Flex
-        h={"100%"}
         maxW={"1360px"}
         margin={{ base: "initial", md: "auto" }}
         align={"center"}
@@ -74,10 +72,14 @@ const Home = () => {
           </Link>
         </Box>
         <Box
-          w={"80%"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
+          w={"100%"}
+          h={"100%"}
+          //display={"block"}
+
+          display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
+          // display={"flex"}
+          // justifyContent={"center"}
+          // alignItems={"center"}
         >
           <Image
             src={Gif}

@@ -37,7 +37,7 @@ const FaleComigo = () => {
   return (
     <>
       <Box
-        h={"100vh"}
+        h={"calc(100vh - 10rem)"}
         padding={10}
         bg={"#003140"}
         maxW={"1360px"}

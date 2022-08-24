@@ -32,25 +32,29 @@ const NewTechs = () => {
   return (
     <Box
       w={"100%"}
-      h={"100vh"}
+      h={"100%"}
+      //h={"calc(100% - 10rem)"}
+      //margin={"auto"}
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"space-around"}
-      padding={"10px"}
+      padding={"5px"}
       bg={"#003140"}
       textAlign={"center"}
     >
       <Heading fontSize={"1.5rem"} color={"white"}>
-        Tecnologias que estou aprimorando
+        Estou Aprendendo...
       </Heading>
       <UnorderedList
         textAlign={["center", "center", "center", "center"]}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
-        maxW={"1360px"}
-        h={"500px"}
+        maxW={"800px"}
+        boxShadow={" 4px 3px 16px 3px #0000001f"}
+        borderRadius={5}
+        h={"15rem"}
         flexWrap={{ base: "wrap", md: "wrap", lg: "wrap" }}
         overflowY={"scroll"}
         css={{
@@ -63,14 +67,15 @@ const NewTechs = () => {
         {techs.map((tech, index) => (
           <ListItem listStyleType={"none"} key={index}>
             <Box
-              w={"350px"}
+              w={"150px"}
               display={"flex"}
               flexDirection={"column"}
               alignItems={"center"}
               justifyContent={"center"}
               gap={5}
+              padding={10}
             >
-              <Box fontSize={"5rem"}> {tech.icon} </Box>
+              <Box fontSize={"3rem"}> {tech.icon} </Box>
               <Box fontWeight={"bold"} color={"#ffffff"}>
                 {tech.name}{" "}
               </Box>
